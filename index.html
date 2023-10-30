@@ -6,6 +6,44 @@
     <title>Simple Calc</title>
 </head>
 <body>
-    
+    <div class="container">
+
+        <!-- "for" attribute is to link to input -->
+        <label for="txtNum1">Number1:</label>
+        <!-- "value" attribute is value that will be displayed initially -->
+        <input type="text" id="txtNum1" value="0"> <br>
+
+        <label for="txtNum1">Number2:</label>
+        <input type="text" id="txtNum2" value="0"> <br> <br>
+
+        <!-- where results will be displayed -->
+        <label for="txtSum">Results</label>
+        <!-- disabled - will not let you input any data in the field -->
+        <input type="text" name="" id="txtSum" value="0" disabled> <br> <br>
+
+        <!-- buttons -->
+
+        <!-- button to add -->
+        <input type="button" value="add" onclick="add()"> <br> <br>
+
+        <!-- button to subtract -->
+        <input type="button" value="minus" onclick="subtract()"> <br> <br>
+        
+        <!-- button to multiply -->
+        <input type="button" value="multiply" onclick="multiply()"> <br><br>
+        
+        <!-- button to quotient -->
+        <input type="button" value="division" onclick="quotient()"> <br><br>
+
+        
+
+
+
+        <!-- button to reset -->
+        <!-- onclicl attribute will trigger resete function -->
+        <input type="button" value="reset" onclick="reset()">
+
+        <script src="script.js"></script>
+ </div>
 </body>
 </html>
